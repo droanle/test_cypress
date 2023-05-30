@@ -17,9 +17,7 @@ jobs:
         with:
           node-version: 14
 
-      - name: Open Weather Tests 🌡️
+      - name: Google Tests 🔎
         uses: cypress-io/github-action@v4.1.0
         with:
-          env: grepTags=@openWeather
-        env:
-          CYPRESS_APP_ID: ${{secrets.OPEM_WEATHER_API_KEY}}
+          env: grepTags=@Google
